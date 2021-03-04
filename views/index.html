@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS</title>
+
+<body class="body-background">
+    <div class="calculator card">
+
+        <input type="text" id="titulo1" class="calculator-screen z-depth-1" value="" disabled/>
+
+
+        <div class="results">
+            <script type="text/javascript">
+                var y;
+                const titulo = document.getElementById('titulo1');
+                //titulo.style.visibility = "hidden";
+
+                y = prompt('Quiero saber los multiplos de: ', '');
+                y = parseInt(y);
+                titulo.value = 'MULTIPLOS DE: '+ y;
+
+                for (var x = 1; x <= 15; x++) {
+                    r = y * x;
+                    document.write(y + " * " + x + " = " + r + "<br>");
+                }
+
+            </script>
+
+        </div>
+    </div>
+</body>
+
+</html>
