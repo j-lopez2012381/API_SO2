@@ -7,11 +7,12 @@
   "devDependencies": {
     "nodemon": "^2.0.7"
   },
-  "name": "API",
+  "name": "api",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "start": "node public/index.js",
+    "dev": "nodemon public/index.js"
   },
   "keywords": [],
   "author": "",
